@@ -13,8 +13,8 @@ The fetch scripts query Materials Project directly, download structures, convert
 
 ## What is included
 
-- Binary fetch / strain / delta scripts in [all_d_metals](./all_d_metals)
-- Ternary fetch / strain / delta scripts in [all_3_metals](./all_3_metals)
+- Binary fetch / strain / delta scripts in [binary_delta_pipeline](./binary_delta_pipeline)
+- Ternary fetch / strain / delta scripts in [ternary_delta_pipeline](./ternary_delta_pipeline)
 - Packing-efficiency analysis in [packing_efficiency_analysis.py](./packing_efficiency_analysis.py)
 - Maximum-delta summary plots in [max_delta_point_plots.py](./max_delta_point_plots.py)
 - Grouped bar statistics in [bar_graph_statistics.py](./bar_graph_statistics.py)
@@ -63,8 +63,8 @@ python run_full_pipeline.py --dry-run
 
 ## Main outputs
 
-- `all_d_metals/`: binary CSVs, aggregated outputs, delta tables, and binary comparison plots
-- `all_3_metals/`: ternary CSVs, aggregated outputs, delta tables, and ternary comparison plots
+- `binary_delta_pipeline/`: binary CSVs, aggregated outputs, delta tables, and binary comparison plots
+- `ternary_delta_pipeline/`: ternary CSVs, aggregated outputs, delta tables, and ternary comparison plots
 - `packing_efficiency_results/`
 - `max_delta_point_results/`
 - `bar_graph_statistics/`

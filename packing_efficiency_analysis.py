@@ -432,15 +432,15 @@ def main() -> None:
     specs = [
         DatasetSpec(
             name="binary",
-            raw_dir=ROOT / "all_d_metals" / "csv",
-            delta_path=ROOT / "all_d_metals" / "delta_analysis" / "all_deltaE_combined.csv",
+            raw_dir=ROOT / "binary_delta_pipeline" / "csv",
+            delta_path=ROOT / "binary_delta_pipeline" / "delta_analysis" / "all_deltaE_combined.csv",
             output_dir=OUT_ROOT / "binary",
             required_delta_cols=("chemsys", "source", "delta_E"),
         ),
         DatasetSpec(
             name="ternary",
-            raw_dir=ROOT / "all_3_metals" / "csv",
-            delta_path=ROOT / "all_3_metals" / "delta_analysis_ternary" / "all_ternary_deltaE_combined.csv",
+            raw_dir=ROOT / "ternary_delta_pipeline" / "csv",
+            delta_path=ROOT / "ternary_delta_pipeline" / "delta_analysis_ternary" / "all_ternary_deltaE_combined.csv",
             output_dir=OUT_ROOT / "ternary",
             required_delta_cols=("chemsys", "source", "delta_E", "metal_1", "metal_2", "ligand"),
         ),

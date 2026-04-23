@@ -45,19 +45,19 @@ def build_steps(args: argparse.Namespace) -> list[list[str]]:
 
     if include_binary:
         steps.extend([
-            script_step("all_d_metals/run_all.py"),
-            script_step("all_d_metals/delta_calc.py"),
+            script_step("binary_delta_pipeline/run_all.py"),
+            script_step("binary_delta_pipeline/delta_calc.py"),
         ])
         if not args.skip_extremes:
-            steps.append(script_step("all_d_metals/figure.py"))
+            steps.append(script_step("binary_delta_pipeline/figure.py"))
 
     if include_ternary:
         steps.extend([
-            script_step("all_3_metals/run.py"),
-            script_step("all_3_metals/delta.py"),
+            script_step("ternary_delta_pipeline/run.py"),
+            script_step("ternary_delta_pipeline/delta.py"),
         ])
         if not args.skip_extremes:
-            steps.append(script_step("all_3_metals/figure.py"))
+            steps.append(script_step("ternary_delta_pipeline/figure.py"))
 
     steps.extend([
         script_step("packing_efficiency_analysis.py"),

@@ -83,17 +83,17 @@ python run_full_pipeline.py --dry-run
 Binary pipeline:
 
 ```bash
-python all_d_metals/run_all.py
-python all_d_metals/delta_calc.py
-python all_d_metals/figure.py
+python binary_delta_pipeline/run_all.py
+python binary_delta_pipeline/delta_calc.py
+python binary_delta_pipeline/figure.py
 ```
 
 Ternary pipeline:
 
 ```bash
-python all_3_metals/run.py
-python all_3_metals/delta.py
-python all_3_metals/figure.py
+python ternary_delta_pipeline/run.py
+python ternary_delta_pipeline/delta.py
+python ternary_delta_pipeline/figure.py
 ```
 
 Summary analyses:
@@ -110,8 +110,8 @@ python plot_ternary_pair_focus_interactive.py --all
 
 ## Output locations
 
-- Binary raw and delta outputs: `all_d_metals/`
-- Ternary raw and delta outputs: `all_3_metals/`
+- Binary raw and delta outputs: `binary_delta_pipeline/`
+- Ternary raw and delta outputs: `ternary_delta_pipeline/`
 - Packing-efficiency results: `packing_efficiency_results/`
 - Maximum-delta summaries: `max_delta_point_results/`
 - Grouped bar statistics: `bar_graph_statistics/`
