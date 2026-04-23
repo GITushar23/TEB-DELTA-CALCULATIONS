@@ -68,5 +68,7 @@ python scripts/run_full_pipeline.py --dry-run
 - `max_delta_point_results/`
 - `bar_graph_statistics/`
 - `binary_electronegativity_vs_delta/`
+- `binary_electronegativity_multi_regression_clean/`
+- `delta_analysis.md`: interpretation note across the major plot families
 
 More detail is in [docs/pipeline.md](./docs/pipeline.md).
