@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-REPO_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MP_KEY_ENV = "MP_API_KEY"
 DEFAULT_MP_KEY_FILE_ENV = "MP_API_KEY_FILE"
 DEFAULT_DFTD3_CMD_ENV = "S_DFTD3_CMD"

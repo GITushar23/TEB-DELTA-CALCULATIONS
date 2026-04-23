@@ -66,16 +66,16 @@ Important variables:
 Run the whole workflow with:
 
 ```bash
-python run_full_pipeline.py
+python scripts/run_full_pipeline.py
 ```
 
 Useful variants:
 
 ```bash
-python run_full_pipeline.py --binary-only
-python run_full_pipeline.py --ternary-only
-python run_full_pipeline.py --skip-interactive-plots
-python run_full_pipeline.py --dry-run
+python scripts/run_full_pipeline.py --binary-only
+python scripts/run_full_pipeline.py --ternary-only
+python scripts/run_full_pipeline.py --skip-interactive-plots
+python scripts/run_full_pipeline.py --dry-run
 ```
 
 ## Step-by-step sequence
@@ -99,13 +99,13 @@ python ternary_delta_pipeline/figure.py
 Summary analyses:
 
 ```bash
-python packing_efficiency_analysis.py
-python max_delta_point_plots.py
-python bar_graph_statistics.py
-python binary_electronegativity_vs_delta.py
-python plot_binary_metal_focus.py --all
-python plot_binary_metal_focus_interactive.py --all
-python plot_ternary_pair_focus_interactive.py --all
+python scripts/analysis/packing_efficiency_analysis.py
+python scripts/analysis/max_delta_point_plots.py
+python scripts/analysis/bar_graph_statistics.py
+python scripts/analysis/binary_electronegativity_vs_delta.py
+python scripts/plotting/plot_binary_metal_focus.py --all
+python scripts/plotting/plot_binary_metal_focus_interactive.py --all
+python scripts/plotting/plot_ternary_pair_focus_interactive.py --all
 ```
 
 ## Output locations

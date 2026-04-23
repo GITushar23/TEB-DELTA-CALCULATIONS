@@ -15,11 +15,10 @@ The fetch scripts query Materials Project directly, download structures, convert
 
 - Binary fetch / strain / delta scripts in [binary_delta_pipeline](./binary_delta_pipeline)
 - Ternary fetch / strain / delta scripts in [ternary_delta_pipeline](./ternary_delta_pipeline)
-- Packing-efficiency analysis in [packing_efficiency_analysis.py](./packing_efficiency_analysis.py)
-- Maximum-delta summary plots in [max_delta_point_plots.py](./max_delta_point_plots.py)
-- Grouped bar statistics in [bar_graph_statistics.py](./bar_graph_statistics.py)
-- Binary electronegativity comparison in [binary_electronegativity_vs_delta.py](./binary_electronegativity_vs_delta.py)
-- One-command orchestration in [run_full_pipeline.py](./run_full_pipeline.py)
+- Analysis scripts in [scripts/analysis](./scripts/analysis)
+- Plotting scripts in [scripts/plotting](./scripts/plotting)
+- Shared pipeline config in [scripts/pipeline_config.py](./scripts/pipeline_config.py)
+- One-command orchestration in [scripts/run_full_pipeline.py](./scripts/run_full_pipeline.py)
 
 ## Setup
 
@@ -49,16 +48,16 @@ The fetch scripts query Materials Project directly, download structures, convert
 Run the full pipeline:
 
 ```bash
-python run_full_pipeline.py
+python scripts/run_full_pipeline.py
 ```
 
 Useful options:
 
 ```bash
-python run_full_pipeline.py --binary-only
-python run_full_pipeline.py --ternary-only
-python run_full_pipeline.py --skip-interactive-plots
-python run_full_pipeline.py --dry-run
+python scripts/run_full_pipeline.py --binary-only
+python scripts/run_full_pipeline.py --ternary-only
+python scripts/run_full_pipeline.py --skip-interactive-plots
+python scripts/run_full_pipeline.py --dry-run
 ```
 
 ## Main outputs

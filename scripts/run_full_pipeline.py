@@ -60,18 +60,18 @@ def build_steps(args: argparse.Namespace) -> list[list[str]]:
             steps.append(script_step("ternary_delta_pipeline/figure.py"))
 
     steps.extend([
-        script_step("packing_efficiency_analysis.py"),
-        script_step("max_delta_point_plots.py"),
-        script_step("bar_graph_statistics.py"),
-        script_step("binary_electronegativity_vs_delta.py"),
+        script_step("scripts/analysis/packing_efficiency_analysis.py"),
+        script_step("scripts/analysis/max_delta_point_plots.py"),
+        script_step("scripts/analysis/bar_graph_statistics.py"),
+        script_step("scripts/analysis/binary_electronegativity_vs_delta.py"),
     ])
 
     if not args.skip_focused_plots:
-        steps.append(script_step("plot_binary_metal_focus.py", "--all"))
+        steps.append(script_step("scripts/plotting/plot_binary_metal_focus.py", "--all"))
 
     if not args.skip_interactive_plots:
-        steps.append(script_step("plot_binary_metal_focus_interactive.py", "--all"))
-        steps.append(script_step("plot_ternary_pair_focus_interactive.py", "--all"))
+        steps.append(script_step("scripts/plotting/plot_binary_metal_focus_interactive.py", "--all"))
+        steps.append(script_step("scripts/plotting/plot_ternary_pair_focus_interactive.py", "--all"))
 
     return steps
 

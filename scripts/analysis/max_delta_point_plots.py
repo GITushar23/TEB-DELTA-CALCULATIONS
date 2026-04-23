@@ -17,7 +17,7 @@ import pandas as pd
 import plotly.express as px
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "max_delta_point_results"
 TABLES_DIR = OUT_DIR / "tables"
 PLOTS_DIR = OUT_DIR / "plots"

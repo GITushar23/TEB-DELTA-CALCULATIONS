@@ -15,7 +15,7 @@ from typing import List, Tuple, Optional
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import itertools
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from pipeline_config import env_bool, env_csv_list, env_float, env_int, get_api_key, get_dftd3_command
 

@@ -15,7 +15,7 @@ import pandas as pd
 from adjustText import adjust_text
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT_CSV = ROOT / "packing_efficiency_results" / "binary" / "tables" / "packing_vs_delta_merged.csv"
 OUT_DIR = ROOT / "packing_efficiency_results" / "binary" / "plots"
 

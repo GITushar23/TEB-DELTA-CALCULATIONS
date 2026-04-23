@@ -20,7 +20,7 @@ import pandas as pd
 from pymatgen.core import Structure
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 OUT_ROOT = ROOT / "packing_efficiency_results"
 
 

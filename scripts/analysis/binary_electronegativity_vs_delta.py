@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT_CSV = ROOT / "bar_graph_statistics" / "tables" / "binary_grouped_statistics.csv"
 OUT_DIR = ROOT / "binary_electronegativity_vs_delta"
 PLOTS_DIR = OUT_DIR / "plots"

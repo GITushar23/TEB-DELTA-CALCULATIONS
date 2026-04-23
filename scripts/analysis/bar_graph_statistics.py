@@ -21,7 +21,7 @@ import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 BINARY_INPUT = ROOT / "packing_efficiency_results" / "binary" / "tables" / "packing_vs_delta_merged.csv"
 TERNARY_INPUT = ROOT / "packing_efficiency_results" / "ternary" / "tables" / "packing_vs_delta_merged.csv"
 
