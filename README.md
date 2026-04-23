@@ -1,1 +1,73 @@
 # TEB-DELTA-CALCULATIONS
+
+Reproducible scripts and analysis outputs for binary and ternary delta-energy studies on d-metal oxides and sulfides.
+
+This repo is organized so someone else can regenerate the workflow from the original **Materials Project** source data through the final summary plots.
+
+## Source data
+
+- Website: <https://materialsproject.org/>
+- API key required: `MP_API_KEY`
+
+The fetch scripts query Materials Project directly, download structures, convert them to POSCAR-style inputs, run strained `s-dftd3` calculations, detect delta dips, and build the downstream plots.
+
+## What is included
+
+- Binary fetch / strain / delta scripts in [all_d_metals](./all_d_metals)
+- Ternary fetch / strain / delta scripts in [all_3_metals](./all_3_metals)
+- Packing-efficiency analysis in [packing_efficiency_analysis.py](./packing_efficiency_analysis.py)
+- Maximum-delta summary plots in [max_delta_point_plots.py](./max_delta_point_plots.py)
+- Grouped bar statistics in [bar_graph_statistics.py](./bar_graph_statistics.py)
+- Binary electronegativity comparison in [binary_electronegativity_vs_delta.py](./binary_electronegativity_vs_delta.py)
+- One-command orchestration in [run_full_pipeline.py](./run_full_pipeline.py)
+
+## Setup
+
+1. Install Python dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Provide your Materials Project API key and DFT-D3 command:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Then edit `.env` and set:
+
+   ```bash
+   MP_API_KEY=your_key_here
+   S_DFTD3_CMD=s-dftd3
+   ```
+
+   If `s-dftd3` is not on `PATH`, use the full executable path.
+
+## Run
+
+Run the full pipeline:
+
+```bash
+python run_full_pipeline.py
+```
+
+Useful options:
+
+```bash
+python run_full_pipeline.py --binary-only
+python run_full_pipeline.py --ternary-only
+python run_full_pipeline.py --skip-interactive-plots
+python run_full_pipeline.py --dry-run
+```
+
+## Main outputs
+
+- `all_d_metals/`: binary CSVs, aggregated outputs, delta tables, and binary comparison plots
+- `all_3_metals/`: ternary CSVs, aggregated outputs, delta tables, and ternary comparison plots
+- `packing_efficiency_results/`
+- `max_delta_point_results/`
+- `bar_graph_statistics/`
+- `binary_electronegativity_vs_delta/`
+
+More detail is in [docs/pipeline.md](./docs/pipeline.md).

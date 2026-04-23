@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+all_d_metals/poscars/
+all_d_metals/strains/
+all_3_metals/poscars/
+all_3_metals/strains/
