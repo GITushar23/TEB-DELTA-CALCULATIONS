@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-1274279,FeO,FeO,Monoclinic,C2/m,12,8,0.0,-1.481519387499999,True,84.98847683834407,5.6148992124359385,1.8157,False,False,AFM,2e-07

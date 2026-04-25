@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-825,RuO2,RuO2,Tetragonal,P4_2/mnm,136,6,0.0,-1.457661898333333,True,62.515586451455455,7.0691471835481,0.0,False,True,NM,1e-07

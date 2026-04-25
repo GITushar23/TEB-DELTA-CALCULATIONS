@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-19009,NiO,NiO,Cubic,Fm-3m,225,2,0.0,-1.218085299999999,True,18.34183362776642,6.762154477618838,2.300899999999999,False,False,FM,2.0000001

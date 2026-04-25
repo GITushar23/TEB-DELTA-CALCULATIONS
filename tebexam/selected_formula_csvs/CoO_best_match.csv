@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-22408,CoO,CoO,Cubic,F-43m,216,4,0.0,-1.2718311462500012,True,45.6458388279094,5.451909946417111,0.5880000000000001,True,False,AFM,7e-07

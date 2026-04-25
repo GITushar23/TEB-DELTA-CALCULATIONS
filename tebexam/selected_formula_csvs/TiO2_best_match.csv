@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-390,TiO2,TiO2,Tetragonal,I4_1/amd,141,6,0.0,-3.5080554519444442,True,68.78397225482972,3.856139057916947,2.0586,False,False,NM,0.0

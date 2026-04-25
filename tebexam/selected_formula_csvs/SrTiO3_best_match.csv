@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-4651,SrTiO3,SrTiO3,Tetragonal,I4/mcm,140,10,0.0,-3.551662291666667,True,119.62507795144641,5.093987781835845,1.848799999999999,False,False,NM,0.0

@@ -1,0 +1,2 @@
+material_id,formula_pretty,formula_reduced,crystal_system,space_group_symbol,space_group_number,nsites,energy_above_hull,formation_energy_per_atom,is_stable,volume,density,band_gap,is_gap_direct,is_metal,ordering,total_magnetization
+mp-17554,LaMnO3,LaMnO3,Orthorhombic,Pnma,62,20,0.125533495023809,-3.009731305586207,False,255.08175724819074,6.297394529869173,0.0,False,True,FM,16.0083734
